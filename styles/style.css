@@ -7,6 +7,7 @@ body {
 
     /* make width of body take up 80% of viewports width */
     width: 80vw;
+    height: auto;
 
     /* center body */
     margin:auto;

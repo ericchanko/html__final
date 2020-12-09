@@ -36,14 +36,14 @@ function submitClicked(event) {
     // get main image current displaying
     let mainImg = document.querySelector(".displayed-img");
 
-    // reason I check for 50 is because all src lengths are 50 if unblurred, 51 if blurred.
-    // this means blur on a blurred img does nothing. This is to prevent errors
-    if (a.value === "blur" && mainImg.src.length ===50) {
-
+    if (a.value === "blur") {
         // split it to insert B
         let src = document.querySelector(".displayed-img").src.split(".");
-        // blur img
-        mainImg.src = src[0] + "B." + src[1];
+        // blur image if not blurred already
+        if (!(src[0][src[0].length-1] ==="B")) {
+            mainImg.src = src[0] + "B." + src[1];
+        }
+
     }
 
     else {
