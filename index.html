@@ -3,16 +3,48 @@
 
 <head>
     <meta charset="utf-8">
+    <title>Title of the document</title>
+    <link rel="stylesheet" href="styles/style.css">
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat&display=swap" rel="stylesheet">
+    <meta name="viewport" content="width=device-width, max-scale=1.0">
+
 </head>
 
 <body>
-    <h1>Welcome to our gallery</h1>
-    <p>Hover on any thumbnail to see it bigger</p>
-    <div id="thumb-bar"> </div>
-    <img class="displayed-img">
-    <label>What effect do you want to apply?</label>
-    <input id="effect" type="text">
-    <button>Submit</button>
+
+    <header>
+        <h1>Welcome to our gallery</h1>
+    </header>
+
+    <section>
+        <p>Hover on any thumbnail to see it bigger</p>
+        <div id="thumb-bar"> </div>
+    </section>
+
+    <main>
+
+        <div class="sml_imgs">
+            <img class="displayed-img" src="images/pic1.jpg" alt="picture of eye">
+            <img class="displayed-img" src="images/pic2.jpg" alt="stone formation">
+            <img class="displayed-img" src="images/pic3.jpg" alt="flowers">
+            <img class="displayed-img" src="images/pic4.jpg" alt="ancient painting">
+            <img class="displayed-img" src="images/pic5.jpg" alt="butterfly">
+        </div>
+
+       <div class ="main_image">
+          <img class="displayed-img" src="images/pic5.jpg" alt ="big_butterfly">
+       </div>
+
+    </main>
+
+    <aside id="form">
+        <label>What effect do you want to apply?</label>
+        <input id="effect" type="text">
+        <button id="submit">Submit</button>
+    </aside>
+
+
 </body>
 
 </html>

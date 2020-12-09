@@ -1,3 +1,55 @@
-div img {
-    width: 20%;
+body {
+    font-family: 'Montserrat', sans-serif;
+    /* make a child of body flex, and align them horizontally center */
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+
+    /* make width of body take up 80% of viewports width */
+    width: 80vw;
+
+    /* center body */
+    margin:auto;
+}
+
+/* for the small images container */
+.sml_imgs, .main_image {
+    max-width: 100%;
+    display: flex;
+    margin-bottom: 0.4em;
+}
+/* for the elements in small images container */
+.sml_imgs img {
+    max-width: 20%;
+    height:auto;
+}
+
+.main_image img {
+    max-width: 100%;
+    height: auto;
+}
+
+/* make items in form horizontally center aligned */
+#form * {
+    display: block;
+    margin: 0 auto 0.5em; /* center items AND give a bit of space between */
+}
+
+
+@media screen and (min-width: 640px) {
+
+    body {
+        width: 640px;
+    }
+
+    section {
+        width: 100%;
+        justify-content: flex-start;
+    }
+
+    #form * {
+        margin-right: 1em;
+        display: inline;
+    }
+
 }
