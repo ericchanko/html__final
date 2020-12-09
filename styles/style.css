@@ -13,13 +13,13 @@ body {
 }
 
 /* for the small images container */
-.sml_imgs, .main_image {
+#thumb-bar, .main_image {
     max-width: 100%;
     display: flex;
     margin-bottom: 0.4em;
 }
 /* for the elements in small images container */
-.sml_imgs img {
+#thumb-bar img {
     max-width: 20%;
     height:auto;
 }
